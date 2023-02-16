@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body class="body">
+    <div class="conteiner-grid">
+        <header class="cabecera">        
+            <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
+        <nav class="cont_nav">
+            <ul>
+                <li class="itemNav"><a class="linkNav" href="../pages/lugares.html">Lugares</a>
+                    <ul class="submenu">
+                        <li class="sub_itemNav"><a class="linkNav" href="../pages/lugares.html">Restaurantes</a></li>
+                        <li class="sub_itemNav"><a class="linkNav" href="../pages/lugares.html">Tiendas</a></li>
+                    </ul>
+                </li>
+                <li class="itemNav"><a class="linkNav" href="../pages/recetas.html">Recetas</a>
+                    <ul class="submenu">
+                    <li class="sub_itemNav"><a class="linkNav" href="../pages/recetas.html">Dulces</a></li>
+                    <li class="sub_itemNav"><a class="linkNav" href="../pages/recetas.html">Saladas</a></li>
+                </ul>
+                </li>
+                <li class="itemNav"><a class="linkNav" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50"></a></li>
+                <li class="itemNav"><a class="linkNav" href="../pages/nosotros.html">Nosotros</a></li>
+                <li class="itemNav"><a class="linkNav" href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="cont_portada">
+            <h1 class="titulo_principal">Tierra Sin TACC</h1>
+            <img class="img_portada" src="../assest/img/Logo.png" alt="Logo">
+        </div>
+        <div class="section_box_fixed">
+            <a href="" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
+        </div>
+
+        <main class="cont_principal">
+            <section class="cont_contacto">
+                <div>
+                    <h2>Completa el siguiente formulario e indicanos recomendaciones o consultas que quieras realizarnos</h2>
+                    <p>Tu opinion nos ayuda a seguir creciendo y ayudar a mas personas a encontrar lo que buscan</p>
+                </div>
+                <form action="">
+                    <fieldset>
+                        <legend>Ingrese los siguientes datos</legend>
+                        <div class="">
+                            <label for="nombre"> Nombre Completo </label>
+                            <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">
+                        </div>
+                        <div class="">
+                            <label for="mail">Mail</label>
+                            <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                        </div>
+                        <div>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                        
+                        </div>
+                    </fieldset>
+                    <div><input id="enviar" type="submit" value="Enviar"></div>
+                
+                </form>
+            </section>
+        </main>
+
+        <footer class="cont_footer">
+            <div class="Redes">
+                <a class="linkRed" href=""><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
+                <a class="linkRed" href=""><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
+                <a class="linkRed" href=""><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
+                <a class="linkRed" href=""><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
+                <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
+            </div>
+            <p class="copyright">© 2023 TierraSinTACC, todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

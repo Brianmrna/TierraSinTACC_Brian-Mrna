@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2? family=Source+Sans+Pro:wght@300&display=swap');
+/*en esta seccion definimos caracteristicas generales para todo el documento*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200 ;
+}
+/*caracteristicas para las etiquetas hr*/
+.lineas{
+    height: 5px;
+    background-color: brown;
+}
+
+
+.body{
+    background-color:rgba(210, 105, 30, 0.788); ;
+}
+
+
+
+
+
+
+/*Estilado de la cabecera y la navegacion*/
+    .cabecera{
+        width: 100%;
+        text-align: center;
+        background-color: rgba(210, 105, 30, 0.61);
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+    
+    }
+
+    .cont_nav{
+        
+        padding:10px;
+        z-index:10;
+        
+        align-items:center;
+        justify-content:center;
+       
+    }
+    
+    .itemNav{
+        width: 150px;
+        list-style: none;
+        display: inline-block;
+        
+        padding-bottom: 10px;
+    }
+
+    .linkNav{
+        text-decoration:double;
+        color: black;
+        display: inline-block;
+        padding: 20px;
+    }
+    .submenu{
+        width: 150px;
+        position: absolute;
+        display: none;
+        padding-top: 10px;
+        z-index: 10;
+        text-align: left;
+        background-color: rgb(170, 85, 24);
+    }
+        
+    .sub_itemNav{
+        display: block;
+        list-style: none;
+        z-index: 10;
+    }
+    .sub_itemNav:hover{
+        background-color: rgba(210,105,30, 0.6); ;
+    }
+    .itemNav:hover{
+        background-color:  rgb(170, 85, 24);
+    }
+    .itemNav:hover .submenu{
+        display: block;
+        border-color: black;
+        border-style:solid;
+        border-top-style:dotted;
+        text-align: left;
+        
+    }
+
+    .section_box_fixed{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 30px;
+        right: 50px;
+        z-index: 10;
+        
+    }
+    .cont_portada{
+        width:100%;
+        height: 40vh;
+        background-image: url(../assest/img/portadaSL.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        border-bottom-style:double;
+        border-bottom-color: brown;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        
+    }
+    .titulo_principal{
+        font-size: 2.5em;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .img_portada{
+        width: 30vh;
+        height: 30vh;
+        padding: 20px; 
+    }
+
+
+/* Desde esta seccion comienza el estilado del contenido principal.*/
+    .cont_principal{
+        width: 100%;
+        background-color: rgba(216, 124, 18, 0.534);
+        text-align: center;
+        padding-bottom: 30px;
+        
+    }
+    .titulos{
+        font-style: oblique;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+    .cont_card{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    .card_lugar_index{
+        width: 30%;
+        height: 300px;
+        background-color: rgb(117,0,0);
+        margin: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        display: inline-block;
+        vertical-align: top;
+        
+
+    }
+
+    .link_card{
+        text-decoration:double;
+        color: black;
+        
+    }
+    .img_card{
+        object-fit: cover;
+        width: 100%;
+        height: 230px;
+        border-radius: 5px;
+
+    }
+
+/*Estilado de card de recetas*/
+.cont_card_recetas{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(216, 124, 18);
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+.card_receta{
+    position: relative;
+    width: 30%;
+    height: 350px;
+    background-color: rgb(117,0,0);
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    vertical-align: top;
+}
+.receta{
+    display: inline-block;
+    width: 100%;
+    height: 335px;
+    padding-left: 60px;
+    position: relative;
+    align-self:center;
+    justify-self: center;
+    background:radial-gradient(rgb(117,0,0),rgb(117, 0, 0,0.8));
+    bottom: 394px;
+    text-align:left;
+    align-items: center;
+}
+.img_receta{
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 335px;
+    z-index: 5;
+}
+.info_receta{
+    z-index: 5;
+    font-size: 2em;
+    position: relative;
+    bottom: 100px;
+    background-color: rgba(240, 248, 255, 0.411);
+}
+.tab_h{
+    font-weight: 600;
+    font-size:x-large;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.815);
+    background-color: rgba(240, 248, 255, 0.288);
+}
+.tab_l{
+font-weight: 600;
+font-size: small;
+background-color: rgba(240, 248, 255, 0.288);
+border-style: solid;
+border-color: rgba(0, 0, 0, 0.575);}
+.card_receta:hover .info_receta{
+    z-index: 2;
+}
+.card_receta:hover .img_receta{
+    z-index: 2;
+}
+.card_receta:hover .receta{
+    z-index: 5;
+}
+
+
+
+/*Estilado de main lugares.html*/
+/*Esta seccion es en la que me enfoque*/
+    .secciones_lugares{
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    padding: 10px; 
+    margin-bottom: 20px;  
+    }
+    .nav_lugares{
+    display: inline-block;
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 30px;
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: blueviolet;
+    font-size: 2em;
+    color: blanchedalmond;
+    }
+    .card_lugares{
+    width: 100%;
+    height: 310px;
+    background-color:  rgb(117, 0, 0);
+    box-shadow: 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    }
+    .img_card_lugares{
+    display: inline-block;
+    border-radius: 5px;
+    width: 33%;
+    height: 100%;
+    
+    
+    }
+    .card_info_lugares{
+    display: inline-block;
+    position: relative;
+    width: 33%;
+    height: 100%;
+    border-radius: 5px;
+    vertical-align:top;
+    
+    
+    }
+    .card_titulos_lugares{
+    display: inline-block;
+    color: white;
+    text-shadow: 2px;
+    font-style: italic;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    background-color:  rgb(117, 0, 0);
+    }
+    .card_info_lugares .valoracion{
+    position: relative;
+    left:150px;
+    top:150px;
+    }
+    .card_map_lugares{
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    border-radius: 5px;
+    
+    }
+/*Modelado de contacto.html*/
+
+/*Estilado de footer*/
+.cont_footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(210, 105, 30);
+    text-align: center;
+    position: relative;
+    border-top-style: double;
+    border-top-color: brown;
+}
+.Redes{
+    position: relative;
+    top: 60px;
+
+}
+.linkRed{
+    padding: 20px;
+
+}
+.copyright{
+    position: relative;
+    top: 120px;
+    font-weight: 600;
+    
+}

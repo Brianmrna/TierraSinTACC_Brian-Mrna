@@ -6,33 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TierraSinTACC</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/estilos.css">
 
 </head>
     <body class="body">
-        <div class="conteiner-grid">
-            <header class="cabecera">        
+        <div class="container-fluid">
+            <!--La cabecera con la navegacion no estoy decidido de que sea la version final, por ahora es responsive-->
+            <header class="cabecera ">               
                 <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
-                <nav class="cont_nav">
-                    <ul>
-                        <li class="itemNav"><a class="linkNav" href="./pages/lugares.html">Lugares</a>
-                            <ul class="submenu">
-                                <li class="sub_itemNav"><a class="linkNav" href="./pages/lugares.html">Restaurantes</a></li>
-                                <li class="sub_itemNav"><a class="linkNav" href="./pages/lugares.html">Tiendas</a></li>
+                <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-center container-fluid">
+
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand ms-lg-5" href="#"><img src="./assest/img/Logo.png" alt="Logo" width="60rem"></a>
+
+                    <div class="collapse navbar-collapse mx-auto justify-content-lg-center" id="navbarTogglerDemo03">
+                        <ul class="d-flex flex-lg-row mx-lg-5 flex-column align-items-start ">
+                            <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="#"">Inicio</a></li>
+                            <li class="nav-item dropdown itemNav">
+                                <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                  <li class="itemNav"><a class="dropdown-item linkNav" href="./pages/recetas.html">Saladas</a></li>
+                                  <li class="itemNav"><a class="dropdown-item linkNav" href="./pages/recetas.html">Dulces</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown itemNav">
+                            <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                <li class="itemNav"><a class="dropdown-item linkNav" href="./pages/lugares.html">Restaurantes</a></li>
+                                <li class="itemNav"><a class="dropdown-item linkNav" href="./pages/lugares.html">Tiendas</a></li>
                             </ul>
-                        </li>
-                        <li class="itemNav"><a class="linkNav" href="./pages/recetas.html">Recetas</a>
-                            <ul class="submenu">
-                            <li class="sub_itemNav"><a class="linkNav" href="./pages/recetas.html">Dulces</a></li>
-                            <li class="sub_itemNav"><a class="linkNav" href="./pages/recetas.html">Saladas</a></li>
+                            </li>
+                            <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="./pages/nosotros.html">Nosotros</a></li>
+                            <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="./pages/contacto.html">Contacto</a></li>
                         </ul>
-                    </li>
-                        <li class="itemNav"><a class="linkNav" href="#"><img src="./assest/img/Logo.png" alt="Logo" width="50px"></a></li>
-                        <li class="itemNav"><a class="linkNav" href="./pages/nosotros.html">Nosotros</a></li>
-                        <li class="itemNav"><a class="linkNav" href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
+                    </div>
+                
+                    
                 </nav>
+                    
             </header>
             <div class="section_box_fixed">
                 <a href="" ><img src="./assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>

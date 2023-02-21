@@ -10,30 +10,37 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="body">
-    <div class="conteiner-grid">
-        <header class="cabecera">        
+    <div class="conteiner-fluid">
+        <!--La cabecera con la navegacion no estoy decidido de que sea la version final, por ahora es responsive-->
+        <header class="cabecera ">               
             <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
-            <nav class="cont_nav">
-                <ul>
-                    <li class="itemNav"><a class="linkNav" href="../pages/lugares.html">Lugares</a>
-                        <ul class="submenu">
-                            <li class="sub_itemNav"><a class="linkNav" href="../pages/lugares.html">Restaurantes</a></li>
-                            <li class="sub_itemNav"><a class="linkNav" href="../pages/lugares.html">Tiendas</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-center container-fluid">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ms-lg-5" href="#"><img src="../assest/img/Logo.png" alt="Logo" width="60rem"></a>
+                <div class="collapse navbar-collapse mx-auto justify-content-lg-center" id="navbarTogglerDemo03">
+                    <ul class="d-flex flex-lg-row mx-lg-5 flex-column align-items-start ">
+                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../index.html">Inicio</a></li>
+                        <li class="nav-item dropdown itemNav">
+                            <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Saladas</a></li>
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Dulces</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown itemNav">
+                        <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
+                        <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Restaurantes</a></li>
+                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Tiendas</a></li>
                         </ul>
-                    </li>
-                    <li class="itemNav"><a class="linkNav" href="../pages/recetas.html">Recetas</a>
-                        <ul class="submenu">
-                        <li class="sub_itemNav"><a class="linkNav" href="../pages/recetas.html">Dulces</a></li>
-                        <li class="sub_itemNav"><a class="linkNav" href="../pages/recetas.html">Saladas</a></li>
+                        </li>
+                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                    </li>
-                    <li class="itemNav"><a class="linkNav" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50"></a></li>
-                    <li class="itemNav"><a class="linkNav" href="../pages/nosotros.html">Nosotros</a></li>
-                    <li class="itemNav"><a class="linkNav" href="../pages/contacto.html">Contacto</a></li>
-                </ul>
+                </div>   
             </nav>
-            
-            
         </header>
         <div class="cont_portada">
             <h1 class="titulo_principal">Tierra Sin TACC</h1>
@@ -43,262 +50,262 @@
             <a href="" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
         </div>
 
-
-        <main class="cont_principal">
-            <h3 class="titulo_principal">Recetas</h3>
-            <div class="cont_card_recetas">
-                <div class="card_receta">
-                    <div class="portada_receta">
+        <div class="container-fluid">
+            <main class="cont_principal">
+                <h3 class="titulo_principal">Recetas</h3>
+                <div class="cont_card_recetas container-fluid">
+                    <div class="card_receta">
+                        <div class="portada_receta">
+                            <div >
+                                <img class="img_receta" src="../assest/img/chipa.jpeg" alt="Chipa">
+                            </div>
+                            <div class="info_receta">
+                            <h2>Chipa</h2>
+                            </div>
+                        </div>
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th  class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Harina de mandioca</th><th class="tab_l">250g</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">250g</th></tr>
+                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">100g</th></tr>
+                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">3</th></tr>
+                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1/2 cucharada</th></tr>
+                                    <tr><th class="tab_l">Leche</th><th class="tab_l">1/4 taza</th></tr>
+                                    <tr><th class="tab_l">Queso para rallar</th><th class="tab_l">250g</th></tr>
+                                    <tr><th class="tab_l">Queso rallado</th><th class="tab_l">200g</th></tr>
+                                    <tr><th class="tab_l">Sal</th><th class="tab_l">4 cucharadas</th></tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card_receta">
                         <div >
-                            <img class="img_receta" src="../assest/img/chipa.jpeg" alt="Chipa">
+                            <img class="img_receta" src="../assest/img/pizza.jpeg" alt="pizza">
                         </div>
                         <div class="info_receta">
-                        <h2>Chipa</h2>
+                        <h2>Pizza</h2>
+                            
+                        </div>
+                        
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr><th class="tab_l">Premezcla</th><th class="tab_l">300g</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">80g</th></tr>
+                                    <tr><th class="tab_l">Agua</th><th class="tab_l">160cc</th></tr>
+                                    <tr><th class="tab_l">Levadura fresca</th><th class="tab_l">25g</th></tr>
+                                    <tr><th class="tab_l">Salsa p/pizza</th><th class="tab_l">1/2 taza</th></tr>
+                                    <tr><th class="tab_l">Aceite de oliva</th><th class="tab_l">3 cucharadas</th></tr>
+                                    <tr><th class="tab_l">Tomates</th><th class="tab_l">2</th></tr>
+                                    <tr><th class="tab_l">Albahaca</th><th class="tab_l">A gusto</th></tr>
+                                    <tr><th class="tab_l">Queso cremoso</th><th class="tab_l">100g</th></tr>
+                                    <tr><th class="tab_l">Queso Provolone</th><th class="tab_l">150g</th></tr>
+                                    <tr><th class="tab_l">oregano y aji</th><th class="tab_l">A gusto</th></tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th  class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Harina de mandioca</th><th class="tab_l">250g</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">250g</th></tr>
-                                <tr><th class="tab_l">Manteca</th><th class="tab_l">100g</th></tr>
-                                <tr><th class="tab_l">Huevos</th><th class="tab_l">3</th></tr>
-                                <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1/2 cucharada</th></tr>
-                                <tr><th class="tab_l">Leche</th><th class="tab_l">1/4 taza</th></tr>
-                                <tr><th class="tab_l">Queso para rallar</th><th class="tab_l">250g</th></tr>
-                                <tr><th class="tab_l">Queso rallado</th><th class="tab_l">200g</th></tr>
-                                <tr><th class="tab_l">Sal</th><th class="tab_l">4 cucharadas</th></tr>
-                                
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/pizza.jpeg" alt="pizza">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Pizza</h2>
+                    <div class="card_receta">
+                        <div >
+                            <img class="img_receta" src="../assest/img/Pandeajo.jpg" alt="Chipa">
+                        </div>
+                        <div class="info_receta">
+                        <h2>Pan de Ajo</h2>
+                        </div>
                         
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Premezcla</th><th class="tab_l">400g</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">100g</th></tr>
+                                    <tr><th class="tab_l">Levadura fresca</th><th class="tab_l">25g</th></tr>
+                                    <tr><th class="tab_l">Agua</th><th class="tab_l">250cc</th></tr>
+                                    <tr><th class="tab_l">Sal</th><th class="tab_l">1 cucharada</th></tr>
+                                    <tr><th class="tab_l">Ajo picado</th><th class="tab_l">3 dientes</th></tr>
+                                    <tr><th class="tab_l">Aceite de oliva</th><th class="tab_l">3 cucharadas</th></tr>
+                                    <tr><th class="tab_l">Pimienta</th><th class="tab_l">A gusto</th></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-                                <tr><th class="tab_l">Premezcla</th><th class="tab_l">300g</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">80g</th></tr>
-                                <tr><th class="tab_l">Agua</th><th class="tab_l">160cc</th></tr>
-                                <tr><th class="tab_l">Levadura fresca</th><th class="tab_l">25g</th></tr>
-                                <tr><th class="tab_l">Salsa p/pizza</th><th class="tab_l">1/2 taza</th></tr>
-                                <tr><th class="tab_l">Aceite de oliva</th><th class="tab_l">3 cucharadas</th></tr>
-                                <tr><th class="tab_l">Tomates</th><th class="tab_l">2</th></tr>
-                                <tr><th class="tab_l">Albahaca</th><th class="tab_l">A gusto</th></tr>
-                                <tr><th class="tab_l">Queso cremoso</th><th class="tab_l">100g</th></tr>
-                                <tr><th class="tab_l">Queso Provolone</th><th class="tab_l">150g</th></tr>
-                                <tr><th class="tab_l">oregano y aji</th><th class="tab_l">A gusto</th></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/Pandeajo.jpg" alt="Chipa">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Pan de Ajo</h2>
-                    </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Premezcla</th><th class="tab_l">400g</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">100g</th></tr>
-                                <tr><th class="tab_l">Levadura fresca</th><th class="tab_l">25g</th></tr>
-                                <tr><th class="tab_l">Agua</th><th class="tab_l">250cc</th></tr>
-                                <tr><th class="tab_l">Sal</th><th class="tab_l">1 cucharada</th></tr>
-                                <tr><th class="tab_l">Ajo picado</th><th class="tab_l">3 dientes</th></tr>
-                                <tr><th class="tab_l">Aceite de oliva</th><th class="tab_l">3 cucharadas</th></tr>
-                                <tr><th class="tab_l">Pimienta</th><th class="tab_l">A gusto</th></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/Empanadas.jpeg" alt="pizza">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Empanadas</h2>
+                    <div class="card_receta">
+                        <div >
+                            <img class="img_receta" src="../assest/img/Empanadas.jpeg" alt="pizza">
+                        </div>
+                        <div class="info_receta">
+                        <h2>Empanadas</h2>
+                            
+                        </div>
                         
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Carne picada</th><th class="tab_l">500g</th></tr>
+                                    <tr><th class="tab_l">cebolla picada</th><th class="tab_l">1/2kg</th></tr>
+                                    <tr><th class="tab_l">cebolla de verdeo</th><th class="tab_l">2</th></tr>
+                                    <tr><th class="tab_l">Ajo</th><th class="tab_l">1 diente</th></tr>
+                                    <tr><th class="tab_l">Huevo duro</th><th class="tab_l">2</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">3 cucharadas</th></tr>
+                                    <tr><th class="tab_l">Lata de tomate</th><th class="tab_l">1</th></tr>
+                                    <tr><th class="tab_l">Aceite</th><th class="tab_l">4 cucharadas</th></tr>
+                                    <tr><th class="tab_l">Aji molido</th><th class="tab_l">A gusto</th></tr>
+                                    <tr><th class="tab_l">Oregano</th><th class="tab_l">A gusto</th></tr>
+                                    <tr><th class="tab_l">Comino</th><th class="tab_l">A gusto</th></tr>
+                                    <tr><th class="tab_l">Pimenton en polvo</th><th class="tab_l">A gusto</th></tr>
+                                    <tr><th class="tab_l">Tapas de empanada</th><th class="tab_l">12</th></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Carne picada</th><th class="tab_l">500g</th></tr>
-                                <tr><th class="tab_l">cebolla picada</th><th class="tab_l">1/2kg</th></tr>
-                                <tr><th class="tab_l">cebolla de verdeo</th><th class="tab_l">2</th></tr>
-                                <tr><th class="tab_l">Ajo</th><th class="tab_l">1 diente</th></tr>
-                                <tr><th class="tab_l">Huevo duro</th><th class="tab_l">2</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">3 cucharadas</th></tr>
-                                <tr><th class="tab_l">Lata de tomate</th><th class="tab_l">1</th></tr>
-                                <tr><th class="tab_l">Aceite</th><th class="tab_l">4 cucharadas</th></tr>
-                                <tr><th class="tab_l">Aji molido</th><th class="tab_l">A gusto</th></tr>
-                                <tr><th class="tab_l">Oregano</th><th class="tab_l">A gusto</th></tr>
-                                <tr><th class="tab_l">Comino</th><th class="tab_l">A gusto</th></tr>
-                                <tr><th class="tab_l">Pimenton en polvo</th><th class="tab_l">A gusto</th></tr>
-                                <tr><th class="tab_l">Tapas de empanada</th><th class="tab_l">12</th></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/bizcochuelo.jpeg" alt="Chipa">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Bizcochuelo</h2>
-                    </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Huevos</th><th class="tab_l">4</th></tr>
-                                <tr><th class="tab_l">Azucar</th><th class="tab_l">130g</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">130g</th></tr>
-                                <tr><th class="tab_l">Esencia de vainilla</th><th class="tab_l">2 cucharaditas</th></tr>
-                                <tr><th class="tab_l">Mermelada</th><th class="tab_l">4 cucharadas</th></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/galletas.webp" alt="pizza">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Galletas</h2>
+                    <div class="card_receta">
+                        <div >
+                            <img class="img_receta" src="../assest/img/bizcochuelo.jpeg" alt="Chipa">
+                        </div>
+                        <div class="info_receta">
+                        <h2>Bizcochuelo</h2>
+                        </div>
                         
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">4</th></tr>
+                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">130g</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">130g</th></tr>
+                                    <tr><th class="tab_l">Esencia de vainilla</th><th class="tab_l">2 cucharaditas</th></tr>
+                                    <tr><th class="tab_l">Mermelada</th><th class="tab_l">4 cucharadas</th></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Rall. Limon</th><th class="tab_l">1/2</th></tr>
-                                <tr><th class="tab_l">Fecula de maiz</th><th class="tab_l">1 taza</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">1 taza</th></tr>
-                                <tr><th class="tab_l">Azucar</th><th class="tab_l">1/2 taza</th></tr>
-                                <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
-                                <tr><th class="tab_l">Ese. de Vainilla</th><th class="tab_l">1 cucharadita</th></tr>
-                                <tr><th class="tab_l">Manteca</th><th class="tab_l">50g</th></tr>
-                                <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharada</th></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/pastafrola.jpeg" alt="Chipa">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Pasta Frola</h2>
-                    </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">1 taza</th></tr>
-                                <tr><th class="tab_l">Premezcla</th><th class="tab_l">2 tazas</th></tr>
-                                <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharada</th></tr>
-                                <tr><th class="tab_l">Azucar</th><th class="tab_l">3/4 taza</th></tr>
-                                <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
-                                <tr><th class="tab_l">Yema</th><th class="tab_l">1</th></tr>
-                                <tr><th class="tab_l">Manteca</th><th class="tab_l">150g</th></tr>
-                                <tr><th class="tab_l">Dulce de membrillo</th><th class="tab_l">350g</th></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="card_receta">
-                    <div >
-                        <img class="img_receta" src="../assest/img/muffins.jpg" alt="pizza">
-                    </div>
-                    <div class="info_receta">
-                    <h2>Muffins</h2>
+                    <div class="card_receta">
+                        <div >
+                            <img class="img_receta" src="../assest/img/galletas.webp" alt="pizza">
+                        </div>
+                        <div class="info_receta">
+                        <h2>Galletas</h2>
+                            
+                        </div>
                         
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Rall. Limon</th><th class="tab_l">1/2</th></tr>
+                                    <tr><th class="tab_l">Fecula de maiz</th><th class="tab_l">1 taza</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">1 taza</th></tr>
+                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">1/2 taza</th></tr>
+                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
+                                    <tr><th class="tab_l">Ese. de Vainilla</th><th class="tab_l">1 cucharadita</th></tr>
+                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">50g</th></tr>
+                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharada</th></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    
-                    <div class="receta">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><th class="tab_l">Azucar</th><th class="tab_l">200g</th></tr>
-                                <tr><th class="tab_l">Manteca</th><th class="tab_l">50g</th></tr>
-                                <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
-                                <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">200g</th></tr>
-                                <tr><th class="tab_l">Goma xantica</th><th class="tab_l">1 cucharadita</th></tr>
-                                <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharadita</th></tr>
-                                <tr><th class="tab_l">Leche</th><th class="tab_l">100cc</th></tr>
-                                <tr><th class="tab_l">Esencia de Vainilla</th><th class="tab_l">1 cucharadita</th></tr>
-                            </tbody>
-                        </table>
+                    <div class="card_receta">
+                        <div >
+                            <img class="img_receta" src="../assest/img/pastafrola.jpeg" alt="Chipa">
+                        </div>
+                        <div class="info_receta">
+                        <h2>Pasta Frola</h2>
+                        </div>
+                        
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">1 taza</th></tr>
+                                    <tr><th class="tab_l">Premezcla</th><th class="tab_l">2 tazas</th></tr>
+                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharada</th></tr>
+                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">3/4 taza</th></tr>
+                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
+                                    <tr><th class="tab_l">Yema</th><th class="tab_l">1</th></tr>
+                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">150g</th></tr>
+                                    <tr><th class="tab_l">Dulce de membrillo</th><th class="tab_l">350g</th></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card_receta">
+                        <div >
+                            <img class="img_receta" src="../assest/img/muffins.jpg" alt="pizza">
+                        </div>
+                        <div class="info_receta">
+                        <h2>Muffins</h2>
+                            
+                        </div>
+                        
+                        <div class="receta">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">200g</th></tr>
+                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">50g</th></tr>
+                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
+                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">200g</th></tr>
+                                    <tr><th class="tab_l">Goma xantica</th><th class="tab_l">1 cucharadita</th></tr>
+                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharadita</th></tr>
+                                    <tr><th class="tab_l">Leche</th><th class="tab_l">100cc</th></tr>
+                                    <tr><th class="tab_l">Esencia de Vainilla</th><th class="tab_l">1 cucharadita</th></tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        
-
-        <footer class="cont_footer">
-            <div class="Redes">
-                <a class="linkRed" href=""><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
-                <a class="linkRed" href=""><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
-                <a class="linkRed" href=""><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
-                <a class="linkRed" href=""><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
-                <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
-            </div>
-            <p class="copyright">© 2023 TierraSinTACC, todos los derechos reservados.</p>
-        </footer>
+            </main>
+        </div>
+        <div class="container-fluid">
+            <footer class="cont_footer">
+                <div class="Redes">
+                    <a class="linkRed" href=""><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
+                    <a class="linkRed" href=""><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
+                    <a class="linkRed" href=""><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
+                    <a class="linkRed" href=""><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
+                    <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
+                </div>
+                <p class="copyright">© 2023 TierraSinTACC, todos los derechos reservados.</p>
+            </footer>
+        </div>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

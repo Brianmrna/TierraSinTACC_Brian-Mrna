@@ -12,29 +12,37 @@
 
 </head>
 <body class="body">
-    <div class="container">
-        <header class="cabecera">        
+    <div class="conteiner-fluid">
+        <!--La cabecera con la navegacion no estoy decidido de que sea la version final, por ahora es responsive-->
+        <header class="cabecera">               
             <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
-        <nav class="cont_nav">
-            <ul>
-                <!--Lista de navegacion con sub menu-->
-                <li class="itemNav"><a class="linkNav" href="../pages/lugares.html">Lugares</a>
-                    <ul class="submenu">
-                        <li class="sub_itemNav"><a class="linkNav" href="../pages/lugares.html">Restaurantes</a></li>
-                        <li class="sub_itemNav"><a class="linkNav" href="../pages/lugares.html">Tiendas</a></li>
+            <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-center container-fluid">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand ms-lg-5" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="60rem"></a>
+                <div class="collapse navbar-collapse mx-auto justify-content-lg-center" id="navbarTogglerDemo03">
+                    <ul class="d-flex flex-lg-row mx-lg-5 flex-column align-items-start ">
+                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../index.html">Inicio</a></li>
+                        <li class="nav-item dropdown itemNav">
+                            <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Saladas</a></li>
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Dulces</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown itemNav">
+                        <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
+                        <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Restaurantes</a></li>
+                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Tiendas</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a></li>
                     </ul>
-                </li>
-                <li class="itemNav"><a class="linkNav" href="../pages/recetas.html">Recetas</a>
-                    <ul class="submenu">
-                    <li class="sub_itemNav"><a class="linkNav" href="../pages/recetas.html">Dulces</a></li>
-                    <li class="sub_itemNav"><a class="linkNav" href="../pages/recetas.html">Saladas</a></li>
-                </ul>
-                </li>
-                <li class="itemNav"><a class="linkNav" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50"></a></li>
-                <li class="itemNav"><a class="linkNav" href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="itemNav"><a class="linkNav" href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                </div>   
+            </nav>
         </header>
         <div class="cont_portada">
             <h1 class="titulo_principal">Tierra Sin TACC</h1>
@@ -48,15 +56,34 @@
         <main class="cont_principal">
             <!--Botones que en un futuro serviran de navegacion por la pagina-->
             <section>
-                <div class="secciones_lugares">
-                    <a class="nav_lugares link_card" href="">Restaurantes</a>
-                    <a class="nav_lugares link_card" href="">Tiendas </a>
+                <div class="d-flex container-xl justify-content-around mt-2">
+                    <a class="nav_lugares col-4 p-2" href="">Restaurantes</a>
+                    <a class="nav_lugares col-4 p-2" href="">Tiendas</a>
                 </div>
                 <hr class="lineas">
             </section>
-            <!--Seccion de cards-->
-            <section class="cont_card">
+            <!--Seccion de cards restaurantes-->
+            <section class="container d-flex flex-wrap justify-content-center">
                 <h2 class="card_titulos_lugares">Restaurantes</h2>
+
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/saltimbanco.jpg" class="rounded-2 img-fluid border border-3" alt="Saltimbanco">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">Saltimbanco</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.217758962587!2d-64.24766648516015!3d-31.352969600323963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb257f8b6e7%3A0xf571e908fc719883!2sSaltimbanco!5e0!3m2!1ses-419!2sar!4v1675033171479!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="card_lugares">
                     <img class="img_card_lugares" src="../assest/img/saltimbanco.jpg" alt="">
                     <div class="card_info_lugares">
@@ -105,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            
+            <!--Seccion de cards Tiendas-->
             <section class="cont_card">
                 <h2 class="card_titulos_lugares">Tiendas</h2>
                 <div class="card_lugares">

@@ -27,16 +27,16 @@
                         <li class="nav-item dropdown itemNav">
                             <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
                             <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Saladas</a></li>
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Dulces</a></li>
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-saladas-">Saladas</a></li>
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-dulces-">Dulces</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown itemNav">
                         <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
-                        <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Restaurantes</a></li>
-                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Tiendas</a></li>
-                        </ul>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-restaurantes-">Restaurantes</a></li>
+                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-tiendas-">Tiendas</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a></li>
                         <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a></li>
@@ -49,27 +49,28 @@
             <img class="img_portada" src="../assest/img/Logo.png" alt="Logo">
         </div>
         <div class="section_box_fixed">
-            <a href="" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
+            <a href="https://wa.me/?text=urlencodedtext" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
         </div>
 
 
         <main class="cont_principal">
             <!--Botones que en un futuro serviran de navegacion por la pagina-->
             <section>
-                <div class="d-flex container-xl justify-content-around mt-2">
-                    <a class="nav_lugares col-4 p-2" href="">Restaurantes</a>
-                    <a class="nav_lugares col-4 p-2" href="">Tiendas</a>
+                <hr class="lineas">
+                <div class="d-flex container-xl justify-content-center mt-2">
+                    <a class="nav_lugares col-4 p-2" href="#-tiendas-" id="-restaurantes-">Bajar a Tiendas</a>
                 </div>
                 <hr class="lineas">
             </section>
             <!--Seccion de cards restaurantes-->
-            <section class="container d-flex flex-wrap justify-content-center">
-                <h2 class="card_titulos_lugares">Restaurantes</h2>
+            <section class="container d-flex flex-wrap justify-content-center" >
+                <h2 class="card_titulos_lugares col-6" >Restaurantes</h2>
 
                 <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
                     <div class="row g-0 color_card_int">
                         <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
-                            <img src="../assest/img/saltimbanco.jpg" class="rounded-2 img-fluid border border-3" alt="Saltimbanco">
+                            <img src="../assest/img/saltimbanco.jpg" class="rounded-2 border border-3" alt="Saltimbanco"width="100%"
+                            height="100%">
                         </div>
                         <div class="col-lg-4 justify-content-center align-items-center">
                             <div class="card-body">
@@ -83,103 +84,142 @@
                     </div>
                 </div>
 
-
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/saltimbanco.jpg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">Saltimbanco</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.217758962587!2d-64.24766648516015!3d-31.352969600323963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb257f8b6e7%3A0xf571e908fc719883!2sSaltimbanco!5e0!3m2!1ses-419!2sar!4v1675033171479!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/homies.jpg" class="rounded-2  border border-3" alt="Homies" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">Homies</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.9107088402293!2d-64.18942768515903!3d-31.38902550206928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329906d9f5cf67%3A0xe714ea00369ffbaf!2sHomies%20I!5e0!3m2!1ses-419!2sar!4v1675033321958!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/homies.jpg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">Homies</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.9107088402293!2d-64.18942768515903!3d-31.38902550206928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329906d9f5cf67%3A0xe714ea00369ffbaf!2sHomies%20I!5e0!3m2!1ses-419!2sar!4v1675033321958!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/bonafide.jpg" class="rounded-2  border border-3" alt="Bonafide" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">Bonafide</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2743754893546!2d-64.1914239140414!3d-31.411439633833616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987f1dd7c0db%3A0xe24bc066add3c592!2sBonafide!5e0!3m2!1ses-419!2sar!4v1675033479200!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/bonafide.jpg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">Bonafide</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2743754893546!2d-64.1914239140414!3d-31.411439633833616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987f1dd7c0db%3A0xe24bc066add3c592!2sBonafide!5e0!3m2!1ses-419!2sar!4v1675033479200!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/SanPietro.jpg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">San Pietro</h3>
-                        <p>(Restaurante) <br> Especialidad en pastas </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.966861076972!2d-64.1664496851582!3d-31.415039103329573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a46a2dac17%3A0xb5e63258199429cb!2sSan%20Pietro%20C%C3%B3rdoba%20Restaurante%20para%20Cel%C3%ADacos.%20Restaurante%20Italiano.%20Barrio%20General%20Paz!5e0!3m2!1ses-419!2sar!4v1675033562309!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/SanPietro.jpg" class="rounded-2  border border-3" alt="SanPietro" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">San Pietro</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.966861076972!2d-64.1664496851582!3d-31.415039103329573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2a46a2dac17%3A0xb5e63258199429cb!2sSan%20Pietro%20C%C3%B3rdoba%20Restaurante%20para%20Cel%C3%ADacos.%20Restaurante%20Italiano.%20Barrio%20General%20Paz!5e0!3m2!1ses-419!2sar!4v1675033562309!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
+
+            <section>
+                <hr class="lineas">
+                <div class="d-flex container-xl justify-content-center mt-2">
+                    <a class="nav_lugares col-4 p-2" href="#-restaurantes-" id="-tiendas-"> Subir a Restaurantes</a>
+                </div>
+                <hr class="lineas">
+            </section>
+
             <!--Seccion de cards Tiendas-->
-            <section class="cont_card">
-                <h2 class="card_titulos_lugares">Tiendas</h2>
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/giselamondino.jpeg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">Gisela Mondino</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.2734194500267!2d-64.17095378255617!3d-31.406592099999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432980afee6b97b%3A0x46927a6496a65910!2sGisela%20Mondino%20Pasteleria%20Sin%20Gluten!5e0!3m2!1ses-419!2sar!4v1675033807213!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="container d-flex flex-wrap justify-content-center" >
+                <h2 class="card_titulos_lugares col-6">Tiendas</h2>
+
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/giselamondino.jpeg" class="rounded-2  border border-3" alt="giselamondino" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">Gisela Mondino</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.2734194500267!2d-64.17095378255617!3d-31.406592099999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432980afee6b97b%3A0x46927a6496a65910!2sGisela%20Mondino%20Pasteleria%20Sin%20Gluten!5e0!3m2!1ses-419!2sar!4v1675033807213!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/donalmacen.png" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">Don Almacen</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1605709256223!2d-64.18190478255616!3d-31.40970179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943295fda9743df9%3A0x24cbdd73fa5c78d7!2sDon%20Almac%C3%A9n!5e0!3m2!1ses-419!2sar!4v1675034008935!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/donalmacen.png" class="rounded-2  border border-3" alt="donalmacen" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">Don Almacen</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1605709256223!2d-64.18190478255616!3d-31.40970179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943295fda9743df9%3A0x24cbdd73fa5c78d7!2sDon%20Almac%C3%A9n!5e0!3m2!1ses-419!2sar!4v1675034008935!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/ACsinTacc.jpeg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">AC Sin TACC</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.814381975049!2d-64.18845388255616!3d-31.419239799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3fc855b566d%3A0x1ec923651f2fd90f!2sAC%20SIN%20TACC!5e0!3m2!1ses-419!2sar!4v1675034149621!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/ACsinTacc.jpeg" class="rounded-2  border border-3" alt="ACsinTacc" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">AC sin TACC</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.814381975049!2d-64.18845388255616!3d-31.419239799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a3fc855b566d%3A0x1ec923651f2fd90f!2sAC%20SIN%20TACC!5e0!3m2!1ses-419!2sar!4v1675034149621!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card_lugares">
-                    <img class="img_card_lugares" src="../assest/img/Lagranchipa.jpeg" alt="">
-                    <div class="card_info_lugares">
-                        <h3 class="card_titulos_lugares">La Gran Chipa</h3>
-                        <p>(Restaurante) <br> Especialidad en </p>
-                        <p class="valoracion">Valoracion</p> <!-- Mas adelante va a ser una puntuacion de estrellas interactivo -->
-                    </div>   
-                    <div class="card_map_lugares">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.986332133369!2d-64.19493938071682!3d-31.41450265251897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a281dd39aee1%3A0x8ced4a695975ad54!2sLa%20Gran%20Chipa!5e0!3m2!1ses-419!2sar!4v1675034319543!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="card mb-3 col-10 col-md-8 col-lg-12 px-2 py-2 color_card" >
+                    <div class="row g-0 color_card_int">
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <img src="../assest/img/Lagranchipa.jpeg" class="rounded-2  border border-3" alt="Lagranchipa" width="100%"
+                            height="100%">
+                        </div>
+                        <div class="col-lg-4 justify-content-center align-items-center">
+                            <div class="card-body">
+                                <h5 class="card_titulos_lugares">La Gran Chipa</h5>
+                                <p class="card-text "><small class="text-muted">Valoracion</small></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 card_map_lugares justify-content-center align-items-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.986332133369!2d-64.19493938071682!3d-31.41450265251897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a281dd39aee1%3A0x8ced4a695975ad54!2sLa%20Gran%20Chipa!5e0!3m2!1ses-419!2sar!4v1675034319543!5m2!1ses-419!2sar" class="rounded-2 border border-3" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -187,15 +227,15 @@
         </main>
 
     <!--Pie de pagina-->
-        <footer class="cont_footer">
-            <div class="Redes">
-                <a class="linkRed" href=""><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
-                <a class="linkRed" href=""><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
-                <a class="linkRed" href=""><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
-                <a class="linkRed" href=""><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
+        <footer class="d-flex container-fluid cont_footer justify-content-center flex-wrap mb-0">
+            <div class="d-flex flex-lg-row flex-column align-items-center ">
+                <a class="linkRed" href="https://www.facebook.com/"><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
+                <a class="linkRed" href="https://www.instagram.com/"><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
+                <a class="linkRed" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
+                <a class="linkRed" href="https://wa.me/?text=urlencodedtext"><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
                 <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
             </div>
-            <p class="copyright">© 2023 TierraSinTACC, todos los derechos reservados.</p>
+            <p class="copyright col-12 justify-content-center">© 2023 TierraSinTACC, todos los derechos reservados.</p>
         </footer>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>    

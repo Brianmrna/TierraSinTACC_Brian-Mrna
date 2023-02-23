@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="body">
-    <div class="conteiner-fluid">
+    <div class="container-fluid">
         <!--La cabecera con la navegacion no estoy decidido de que sea la version final, por ahora es responsive-->
         <header class="cabecera ">               
             <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
@@ -25,16 +25,16 @@
                         <li class="nav-item dropdown itemNav">
                             <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
                             <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Saladas</a></li>
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html">Dulces</a></li>
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-saladas-">Saladas</a></li>
+                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-dulces-">Dulces</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown itemNav">
                         <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
-                        <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Restaurantes</a></li>
-                            <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html">Tiendas</a></li>
-                        </ul>
+                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-restaurantes-">Restaurantes</a></li>
+                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-tiendas-">Tiendas</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a></li>
                         <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a></li>
@@ -47,18 +47,28 @@
             <img class="img_portada" src="../assest/img/Logo.png" alt="Logo">
         </div>
         <div class="section_box_fixed">
-            <a href="" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
+            <a href="https://wa.me/?text=urlencodedtext" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
         </div>
 
         <div class="container-fluid">
             <main class="cont_principal">
-                <h3 class="titulo_principal">Recetas</h3>
-                <div class="cont_card_recetas container-fluid">
-                    <div class="card_receta">
-                        <div class="portada_receta">
-                            <div >
-                                <img class="img_receta" src="../assest/img/chipa.jpeg" alt="Chipa">
-                            </div>
+                <h2 class="titulo_principal">Recetas</h2>
+                <section>
+                    <hr class="lineas">
+                    <div class="d-flex container-xl justify-content-center mt-2">
+                        <a class="nav_lugares col-4 p-2" href="#-dulces-" id="-saladas-">Bajar a Dulces</a>
+                    </div>
+                    <hr class="lineas">
+                </section>
+
+                <!--Seccion recetas saladas-->
+                <div class="d-flex cont_card_recetas container-fluid">
+                    
+                    <h2 class="card_titulos_lugares col-10 row justify-content-center">Saladas</h2>
+
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/chipa.jpeg" alt="Chipa" >
                             <div class="info_receta">
                             <h2>Chipa</h2>
                             </div>
@@ -85,15 +95,13 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/pizza.jpeg" alt="pizza">
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/pizza.jpeg" alt="Pizza" >
+                            <div class="info_receta">
+                            <h2>Pizza</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Pizza</h2>
-                            
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -118,14 +126,13 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/Pandeajo.jpg" alt="Chipa">
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/Pandeajo.jpg" alt="Pandeajo" >
+                            <div class="info_receta">
+                            <h2>Pan de Ajo</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Pan de Ajo</h2>
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -146,15 +153,13 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/Empanadas.jpeg" alt="pizza">
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/Empanadas.jpeg" alt="Empanadas" >
+                            <div class="info_receta">
+                            <h2>Empanadas</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Empanadas</h2>
-                            
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -180,14 +185,27 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/bizcochuelo.jpeg" alt="Chipa">
+                </div>
+
+                <section>
+                    <hr class="lineas">
+                    <div class="d-flex container-xl justify-content-center mt-2">
+                        <a class="nav_lugares col-4 p-2" href="#-saladas-" id="-dulces-">Subir a Saladas</a>
+                    </div>
+                    <hr class="lineas">
+                </section>
+
+                <!--Seccion recetas Dulces-->
+                <div class="d-flex cont_card_recetas container-fluid">
+                    <h2 class="card_titulos_lugares col-10 row justify-content-center">Dulces</h2>
+        
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/bizcochuelo.jpeg" alt="Bizcochuelo" >
+                            <div class="info_receta">
+                            <h2>Bizcochuelo</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Bizcochuelo</h2>
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -205,15 +223,13 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/galletas.webp" alt="pizza">
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/galletas.webp" alt="Galletas" >
+                            <div class="info_receta">
+                            <h2>Galletas</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Galletas</h2>
-                            
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -234,14 +250,14 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/pastafrola.jpeg" alt="Chipa">
+
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/pastafrola.jpeg" alt="pastafrola" >
+                            <div class="info_receta">
+                            <h2>Pasta Frola</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Pasta Frola</h2>
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -262,15 +278,13 @@
                             </table>
                         </div>
                     </div>
-                    <div class="card_receta">
-                        <div >
-                            <img class="img_receta" src="../assest/img/muffins.jpg" alt="pizza">
+                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
+                        <div class="mostrar">
+                            <img class="img_receta" src="../assest/img/muffins.jpg" alt="muffins" >
+                            <div class="info_receta">
+                            <h2>Muffins</h2>
+                            </div>
                         </div>
-                        <div class="info_receta">
-                        <h2>Muffins</h2>
-                            
-                        </div>
-                        
                         <div class="receta">
                             <table>
                                 <thead>
@@ -295,15 +309,15 @@
             </main>
         </div>
         <div class="container-fluid">
-            <footer class="cont_footer">
-                <div class="Redes">
-                    <a class="linkRed" href=""><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
-                    <a class="linkRed" href=""><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
-                    <a class="linkRed" href=""><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
-                    <a class="linkRed" href=""><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
+            <footer class="d-flex container-fluid cont_footer justify-content-center flex-wrap mb-0">
+                <div class="d-flex flex-lg-row flex-column align-items-center ">
+                    <a class="linkRed" href="https://www.facebook.com/"><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
+                    <a class="linkRed" href="https://www.instagram.com/"><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
+                    <a class="linkRed" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
+                    <a class="linkRed" href="https://wa.me/?text=urlencodedtext"><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
                     <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
                 </div>
-                <p class="copyright">© 2023 TierraSinTACC, todos los derechos reservados.</p>
+                <p class="copyright col-12 justify-content-center">© 2023 TierraSinTACC, todos los derechos reservados.</p>
             </footer>
         </div>
     </div>

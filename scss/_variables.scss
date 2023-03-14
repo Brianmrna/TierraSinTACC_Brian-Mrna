@@ -1,0 +1,14 @@
+/*Variables*/
+$color_principal:rgb(24,24,24);
+$color_fondo:rgb(33, 37, 41);
+$color_fondo_card:rgb(0, 0, 0);
+$ancho: 100%;
+
+/*MAPS*/
+/*Utilizado en header,nosotros, nav_lugares*/
+$bordes:(
+    border-solid-black: 1px solid rgb(255, 255, 255),
+    border-solid-dospx: 2px solid rgb(255, 255, 255),
+    border-double-dospx: 2px double rgb(0, 0, 0),
+);
+    

@@ -1,0 +1,79 @@
+.cabecera{
+    background-color: rgba(0, 0, 0, 0.692);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    .itemNav{  
+        list-style: none;
+        background-color:$color_fondo_card;
+        border-radius: 10px;
+        border: map-get($bordes , border-solid-black );
+        text-align: center;
+        .linkNav{
+            text-decoration:double;
+            color: rgb(223, 165, 165) !important;
+            &:hover{
+                color: rgb(255, 255, 255) !important;
+                background-color: rgb(238, 238, 238);
+                border-radius: 10px;
+            }
+        }
+        .submenu{
+            z-index: 10;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0);
+            border-style: none !important;
+        }
+    
+    }
+
+}
+/*En estas clases uso el "!important" ya que con las clases de boostrap no me respondia correctamente */
+
+.section_box_fixed{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+.cont_portada{
+    display:flex;
+    height: 300px;
+    background-image: url(../assest/img/portadaSL.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+    .titulo_principal{
+        font-size: 2.5em;
+        font-style: italic;
+        font-weight: 600;
+    }
+    .img_portada{
+        max-width: 100px;
+        max-height:100px;
+        padding: 20px; 
+    }
+}
+
+
+@media (min-width:205px){
+    .cont_portada{
+        .img_portada{
+            max-width: 150px;
+            max-height:150px;
+        }
+    }
+    
+}
+/*Esta media query tiene como finalidad que la barra de navegacion no tape toda la pantalla en tamaños muy pequeños de pantalla*/
+@media (max-height:300px) and (max-width:576px) {
+    .cabecera{
+        position: relative;
+    }  
+}

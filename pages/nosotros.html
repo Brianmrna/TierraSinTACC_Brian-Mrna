@@ -4,77 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nosotros</title>
+    <title>TierraSinTACC-Nosotros</title>
+    <meta name="description" content="web de ayuda al usuario que no consume gluten">
+    <meta name="keywords" content="Celiaco,Celiaquia, Gluten Free, Sin gluten, Sin tacc, Restaurantes para celiacos, Recetas sin tacc, Restaurantes, dieta sin gluten, intolerante">
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css/animate.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="body">
-    <div class="conteiner-fluid">
+    <div class="container-xxl shadow ">
         <!--La cabecera con la navegacion no estoy decidido de que sea la version final, por ahora es responsive-->
-        <header class="cabecera ">               
+        <header class="cabecera row">               
             <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-center container-fluid">
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand ms-lg-5" href="#"><img src="../assest/img/Logo.png" alt="Logo" width="60rem"></a>
-                <div class="collapse navbar-collapse mx-auto justify-content-lg-center" id="navbarTogglerDemo03">
-                    <ul class="d-flex flex-lg-row mx-lg-5 flex-column align-items-start ">
-                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../index.html">Inicio</a></li>
-                        <li class="nav-item dropdown itemNav">
-                            <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
-                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-saladas-">Saladas</a></li>
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-dulces-">Dulces</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown itemNav">
-                        <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
-                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-restaurantes-">Restaurantes</a></li>
-                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-tiendas-">Tiendas</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>   
-            </nav>
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="container-fluid">
+                    <a href="../index.html"><img src="../assest/img/Logo.png" alt="Logo Tierra sin tacc" loading="lazy" width="60rem"></a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
+                            <li class="nav-item itemNav mx-1 mb-2">
+                                <a class="nav-link linkNav" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown itemNav mx-1 mb-2">
+                                <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-restaurantes-">Restaurantes</a></li>
+                                    <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-tiendas-">Tiendas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown itemNav mx-1 mb-2">
+                                <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                     <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-saladas-">Saladas</a></li>
+                                    <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-dulces-">Dulces</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item itemNav mx-1 mb-2">
+                                <a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item itemNav mx-1 mb-2">
+                                <a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>  
         </header>
-        <div class="cont_portada">
+        <div class="cont_portada row">
             <h1 class="titulo_principal">Tierra Sin TACC</h1>
-            <img class="img_portada" src="../assest/img/Logo.png" alt="Logo">
+            <img class="img_portada animate__animated animate__heartBeat" src="../assest/img/Logo.png" alt="Logo">
         </div>
         <div class="section_box_fixed">
-            <a href="https://wa.me/?text=urlencodedtext" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
+            <a href="https://wa.me/?text=urlencodedtext" target="_blank"><img src="../assest/ico/whatsapp-removebg-preview.png" width="100%" alt="Link a chat de whatsapp"></a>
         </div>
 
-        <main class="cont_principal">
-            <div>
-                <h2>Quienes somos</h2>
-                <p>Para las personas que realizan una dieta libre de gluten, se le hace dificil encontrar lugares donde vendan productos para su dieta o bien restaurantes para poder comer. Nuestro objetivo es brindar esa informacion necesaria para facilitarle el dia a dia a este publico y a cualquiera que comience a realizar esta dieta. </p>
+        <main class="cont_principal row justify-content-center">
+            <hr class="lineas">
+            <h2 class="titulos fs-1">Nosotros</h2>
+            <hr class="lineas">
+            <div class="row cont_info">
+                <h3 class="titulos_nosotros fs-2 mb-5">Quienes somos...</h3>
+                <p class="texto_info col-10 col-md-6">Para las personas que realizan una dieta libre de gluten, se le hace dificil encontrar lugares donde vendan productos para su dieta o bien restaurantes para poder comer.</p>
+                <img src="../assest/img/Logo.png" class="col-10 img_logo col-md-4 ratio ratio-1x1"  alt="imagen de logo de la pagina">
+                <p class="texto_info col-10 ">Nuestro objetivo es brindar esa informacion necesaria para facilitarle el dia a dia a este publico y a cualquiera que comience a realizar esta dieta. </p>
             </div>
-
-                <img src="../assest/img/Logo_tst.png" alt="imagen de logo de la pagina">
+            <div class="row cont_info mt-5">
+                <h3 class="titulos_nosotros fs-2 mb-2">Mas sobre la dieta sin TACC...</h3>
+                <p class="texto_info col-10">La enfermedad celiaca es una enfermedad digestiva que daña el intestino delgado y altera la absorción de las vitaminas, minerales y demás nutrientes que contienen los alimentos. Los pacientes con enfermedad celíaca no toleran una proteína llamada gluten, que se encuentra en los cereales (trigo, avena, cebada, centeno).</p>
+                <h3 class="titulos_nosotros fs-2 mb-2">¿Celíaco o Intolerante al gluten?</h3>
+                <p class="texto_info col-10">Lo primero que conviene ,claro para poder distinguirlas, es que mientras que la celiaquía es una enfermedad, un trastorno crónico, sistémico y de origen autoinmune, la intolerancia al gluten es una reacción adversa del organismo ante un antígeno (el gluten).</p>
+            </div>
+            <div class="row cont_info mt-5 justify-content-center">
+                <p class="texto_info">A continuacion dejamos un video explicativo sobre esta condicion.</p>
+                <div class="col-10 col-sm-6 mb-3">
+                    <iframe  src="https://www.youtube.com/embed/WfFnEbbi1p0" class=" rounded-2 border border-3 ratio ratio-4x3"
+                    width="100%" height="100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
                 
-            <div>
-                <h2>Mas sobre la dieta sin TACC</h2>
-                <p>La enfermedad celiaca es una enfermedad digestiva que daña el intestino delgado y altera la absorción de las vitaminas, minerales y demás nutrientes que contienen los alimentos. Los pacientes con enfermedad celíaca no toleran una proteína llamada gluten, que se encuentra en los cereales (trigo, avena, cebada, centeno).</p>
-                <h2>¿Cuál es la diferencia entre celíaco e intolerante al gluten?</h2>
-                <p>Lo primero que conviene claro para poder distinguirlas es que mientras que la celiaquía es una enfermedad, un trastorno crónico, sistémico y de origen autoinmune, la intolerancia al gluten es una reacción adversa del organismo ante un antígeno (el gluten)</p>
             </div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WfFnEbbi1p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
             
         </main>
 
-        <footer class="d-flex container-fluid cont_footer justify-content-center flex-wrap mb-0">
-            <div class="d-flex flex-lg-row flex-column align-items-center ">
-                <a class="linkRed" href="https://www.facebook.com/"><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
-                <a class="linkRed" href="https://www.instagram.com/"><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
+        <footer class="cont_footer mb-0 row">
+            <div class="Redes flex-lg-row flex-column ">
+                <a class="linkRed" href="https://www.facebook.com/" target="_blank"><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt="facebook"></a>
+                <a class="linkRed" href="https://www.instagram.com/" target="_blank"><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt="instagram"></a>
                 <a class="linkRed" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
-                <a class="linkRed" href="https://wa.me/?text=urlencodedtext"><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
-                <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
+                <a class="linkRed" href="https://wa.me/?text=urlencodedtext" target="_blank"><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt="whatsapp"></a>
+                <a class="linkRed" href="https://twitter.com/" target="_blank"><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt="twitter"></a>
             </div>
             <p class="copyright col-12 justify-content-center">© 2023 TierraSinTACC, todos los derechos reservados.</p>
         </footer>

@@ -1,0 +1,38 @@
+/*Estilado de main de recetas*/
+.cont_card_receta{
+    display: flex;
+    background-color: rgb(39,40,45);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    .card_receta{
+        display: inline-block;
+        background-color:rgb(39,40,45);
+        margin: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(209, 207, 207, 0.5);
+        vertical-align: top;
+        height: 300px;
+        transition: all 1s;
+        &:hover{
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        .img_receta{
+            object-fit: cover;
+            width: $ancho;
+            height: 100%;
+            border-radius: 5px; 
+        }
+        .info_receta{
+            z-index: 5;
+            font-size: 2em;
+            position: relative;
+            bottom: 100px;
+            background-color: rgba(240, 248, 255, 0.411);
+        }
+    }
+}
+
+
+

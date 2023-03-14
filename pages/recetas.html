@@ -4,322 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recetas</title>
+    <title>TierraSinTACC-Recetas</title>
+    <meta name="description" content="Listado de recetas libres de gluten">
+    <meta name="keywords" content="Celiaco,Celiaquia, Gluten Free, Sin gluten, Sin tacc, Recetas sin tacc">
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css/animate.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="body">
-    <div class="container-fluid">
+    <div class="container-xxl shadow ">
         <!--La cabecera con la navegacion no estoy decidido de que sea la version final, por ahora es responsive-->
-        <header class="cabecera ">               
+        <header class="cabecera row">               
             <!--Este elemento es para agrupar elementos de navegación del sitio, muy importante utilizarlo en el menú principal.-->
-            <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-center container-fluid">
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand ms-lg-5" href="#"><img src="../assest/img/Logo.png" alt="Logo" width="60rem"></a>
-                <div class="collapse navbar-collapse mx-auto justify-content-lg-center" id="navbarTogglerDemo03">
-                    <ul class="d-flex flex-lg-row mx-lg-5 flex-column align-items-start ">
-                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../index.html">Inicio</a></li>
-                        <li class="nav-item dropdown itemNav">
-                            <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
-                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-saladas-">Saladas</a></li>
-                              <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-dulces-">Dulces</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown itemNav">
-                        <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
-                            <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
-                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-restaurantes-">Restaurantes</a></li>
-                                <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-tiendas-">Tiendas</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a></li>
-                        <li class="nav-item itemNav align-items-start"><a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </div>   
-            </nav>
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="container-fluid">
+                    <a href="../index.html"><img src="../assest/img/Logo.png" alt="Logo Tierra sin tacc" loading="lazy" width="60rem"></a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-pills">
+                            <li class="nav-item itemNav mx-1 mb-2">
+                                <a class="nav-link linkNav" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown itemNav mx-1 mb-2">
+                                <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lugares</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                    <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-restaurantes-">Restaurantes</a></li>
+                                    <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/lugares.html #-tiendas-">Tiendas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown itemNav mx-1 mb-2">
+                                <a class="nav-link dropdown-toggle linkNav" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                                <ul class="dropdown-menu submenu" aria-labelledby="navbarScrollingDropdown">
+                                     <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-saladas-">Saladas</a></li>
+                                    <li class="itemNav"><a class="dropdown-item linkNav" href="../pages/recetas.html #-dulces-">Dulces</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item itemNav mx-1 mb-2">
+                                <a class="nav-link linkNav" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item itemNav mx-1 mb-2">
+                                <a class="nav-link linkNav" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>  
         </header>
-        <div class="cont_portada">
+        <div class="cont_portada row">
             <h1 class="titulo_principal">Tierra Sin TACC</h1>
-            <img class="img_portada" src="../assest/img/Logo.png" alt="Logo">
+            <img class="img_portada animate__animated animate__heartBeat" src="../assest/img/Logo.png" alt="Logo">
         </div>
         <div class="section_box_fixed">
-            <a href="https://wa.me/?text=urlencodedtext" ><img src="../assest/ico/Whatsapp_icon-icons.com_66931.png" width="50px" alt=""></a>
+            <a href="https://wa.me/?text=urlencodedtext" target="_blank"><img src="../assest/ico/whatsapp-removebg-preview.png" width="100%" alt="Link a chat de whatsapp"></a>
         </div>
+        <main class="cont_principal row">
+            <hr class="lineas">
+            <h2 class="titulos fs-1">Recetas</h2>
+            <hr class="lineas">
+            <!-- Boton de Navegacion-->
+            <section>
+                <hr class="lineas">
+                <div class="d-flex container-xl justify-content-center mt-2">
+                    <a class="nav_lugares col-12 col-sm-4 p-2" href="#-dulces-" id="-saladas-">Bajar a Dulces</a>
+                </div>
+                <hr class="lineas">
+            </section>
+            <!--Seccion recetas saladas-->
+            <div class="cont_card_receta container-fluid">
+                
+                <h2 class="card_titulos_lugares col-10 row justify-content-center">Saladas</h2>
 
-        <div class="container-fluid">
-            <main class="cont_principal">
-                <h2 class="titulo_principal">Recetas</h2>
-                <section>
-                    <hr class="lineas">
-                    <div class="d-flex container-xl justify-content-center mt-2">
-                        <a class="nav_lugares col-4 p-2" href="#-dulces-" id="-saladas-">Bajar a Dulces</a>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta " src="../assest/img/chipa.jpeg" alt="Chipa" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/chipa:-3-recetas-diferentes.html?utm_source=search" class="link_card" target="_blank">Chipa</a>
                     </div>
-                    <hr class="lineas">
-                </section>
-
-                <!--Seccion recetas saladas-->
-                <div class="d-flex cont_card_recetas container-fluid">
-                    
-                    <h2 class="card_titulos_lugares col-10 row justify-content-center">Saladas</h2>
-
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/chipa.jpeg" alt="Chipa" >
-                            <div class="info_receta">
-                            <h2>Chipa</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th  class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Harina de mandioca</th><th class="tab_l">250g</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">250g</th></tr>
-                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">100g</th></tr>
-                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">3</th></tr>
-                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1/2 cucharada</th></tr>
-                                    <tr><th class="tab_l">Leche</th><th class="tab_l">1/4 taza</th></tr>
-                                    <tr><th class="tab_l">Queso para rallar</th><th class="tab_l">250g</th></tr>
-                                    <tr><th class="tab_l">Queso rallado</th><th class="tab_l">200g</th></tr>
-                                    <tr><th class="tab_l">Sal</th><th class="tab_l">4 cucharadas</th></tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
+                </div>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/pizza.jpeg" alt="Pizza" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/receta:-pizza-para-celiacos-sin-gluten-%7C-maizena.html" class="link_card" target="_blank">Pizza</a>
                     </div>
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/pizza.jpeg" alt="Pizza" >
-                            <div class="info_receta">
-                            <h2>Pizza</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                    <tr><th class="tab_l">Premezcla</th><th class="tab_l">300g</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">80g</th></tr>
-                                    <tr><th class="tab_l">Agua</th><th class="tab_l">160cc</th></tr>
-                                    <tr><th class="tab_l">Levadura fresca</th><th class="tab_l">25g</th></tr>
-                                    <tr><th class="tab_l">Salsa p/pizza</th><th class="tab_l">1/2 taza</th></tr>
-                                    <tr><th class="tab_l">Aceite de oliva</th><th class="tab_l">3 cucharadas</th></tr>
-                                    <tr><th class="tab_l">Tomates</th><th class="tab_l">2</th></tr>
-                                    <tr><th class="tab_l">Albahaca</th><th class="tab_l">A gusto</th></tr>
-                                    <tr><th class="tab_l">Queso cremoso</th><th class="tab_l">100g</th></tr>
-                                    <tr><th class="tab_l">Queso Provolone</th><th class="tab_l">150g</th></tr>
-                                    <tr><th class="tab_l">oregano y aji</th><th class="tab_l">A gusto</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                </div>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/Pandeajo.jpg" alt="Pandeajo" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/pan-de-ajo-sin-tacc.html" class="link_card" target="_blank">Pan de Ajo</a>
                     </div>
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/Pandeajo.jpg" alt="Pandeajo" >
-                            <div class="info_receta">
-                            <h2>Pan de Ajo</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Premezcla</th><th class="tab_l">400g</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">100g</th></tr>
-                                    <tr><th class="tab_l">Levadura fresca</th><th class="tab_l">25g</th></tr>
-                                    <tr><th class="tab_l">Agua</th><th class="tab_l">250cc</th></tr>
-                                    <tr><th class="tab_l">Sal</th><th class="tab_l">1 cucharada</th></tr>
-                                    <tr><th class="tab_l">Ajo picado</th><th class="tab_l">3 dientes</th></tr>
-                                    <tr><th class="tab_l">Aceite de oliva</th><th class="tab_l">3 cucharadas</th></tr>
-                                    <tr><th class="tab_l">Pimienta</th><th class="tab_l">A gusto</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                </div>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/Empanadas.jpeg" alt="Empanadas" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/empanadas-de-carne-sin-tacc.html" class="link_card" target="_blank">Empanadas</a>
                     </div>
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/Empanadas.jpeg" alt="Empanadas" >
-                            <div class="info_receta">
-                            <h2>Empanadas</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Carne picada</th><th class="tab_l">500g</th></tr>
-                                    <tr><th class="tab_l">cebolla picada</th><th class="tab_l">1/2kg</th></tr>
-                                    <tr><th class="tab_l">cebolla de verdeo</th><th class="tab_l">2</th></tr>
-                                    <tr><th class="tab_l">Ajo</th><th class="tab_l">1 diente</th></tr>
-                                    <tr><th class="tab_l">Huevo duro</th><th class="tab_l">2</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">3 cucharadas</th></tr>
-                                    <tr><th class="tab_l">Lata de tomate</th><th class="tab_l">1</th></tr>
-                                    <tr><th class="tab_l">Aceite</th><th class="tab_l">4 cucharadas</th></tr>
-                                    <tr><th class="tab_l">Aji molido</th><th class="tab_l">A gusto</th></tr>
-                                    <tr><th class="tab_l">Oregano</th><th class="tab_l">A gusto</th></tr>
-                                    <tr><th class="tab_l">Comino</th><th class="tab_l">A gusto</th></tr>
-                                    <tr><th class="tab_l">Pimenton en polvo</th><th class="tab_l">A gusto</th></tr>
-                                    <tr><th class="tab_l">Tapas de empanada</th><th class="tab_l">12</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                </div>
+            </div>
+            <!-- Boton de Navegacion-->
+            <section>
+                <hr class="lineas">
+                <div class="d-flex container-xl justify-content-center mt-2">
+                    <a class="nav_lugares col-12 col-sm-4 p-2" href="#-saladas-" id="-dulces-">Subir a Saladas</a>
+                </div>
+                <hr class="lineas">
+            </section>
+            <!--Seccion recetas Dulces-->
+            <div class="cont_card_receta container-fluid">
+                <h2 class="card_titulos_lugares col-10 row justify-content-center">Dulces</h2>
+    
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/bizcochuelo.jpeg" alt="Bizcochuelo" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/receta:-bizcochuelo-sin-tacc-sin-harina-de-trigo-maizena.html" class="link_card" target="_blank">Bizcochuelo</a>
+                    </div>
+                </div>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/galletas.webp" alt="Galletas" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.es/recetas/galletitas-de-maizena.html" class="link_card" target="_blank">Galletas</a>
                     </div>
                 </div>
 
-                <section>
-                    <hr class="lineas">
-                    <div class="d-flex container-xl justify-content-center mt-2">
-                        <a class="nav_lugares col-4 p-2" href="#-saladas-" id="-dulces-">Subir a Saladas</a>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/pastafrola.jpeg" alt="pastafrola" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/pasta-frola.html?gclsrc=aw.ds" class="link_card" target="_blank">Pasta Frola</a>
                     </div>
-                    <hr class="lineas">
-                </section>
-
-                <!--Seccion recetas Dulces-->
-                <div class="d-flex cont_card_recetas container-fluid">
-                    <h2 class="card_titulos_lugares col-10 row justify-content-center">Dulces</h2>
+                </div>
+                <div class="card_receta col-10 col-sm-6 col-md-4">
+                    <img class="img_receta" src="../assest/img/muffins.jpg" alt="muffins" >
+                    <div class="info_receta">
+                        <a href="https://www.maizena.com.ar/recetas/cupcakes.html?gclsrc=aw.ds" class="link_card" target="_blank">Muffins</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
         
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/bizcochuelo.jpeg" alt="Bizcochuelo" >
-                            <div class="info_receta">
-                            <h2>Bizcochuelo</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">4</th></tr>
-                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">130g</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">130g</th></tr>
-                                    <tr><th class="tab_l">Esencia de vainilla</th><th class="tab_l">2 cucharaditas</th></tr>
-                                    <tr><th class="tab_l">Mermelada</th><th class="tab_l">4 cucharadas</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/galletas.webp" alt="Galletas" >
-                            <div class="info_receta">
-                            <h2>Galletas</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Rall. Limon</th><th class="tab_l">1/2</th></tr>
-                                    <tr><th class="tab_l">Fecula de maiz</th><th class="tab_l">1 taza</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">1 taza</th></tr>
-                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">1/2 taza</th></tr>
-                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
-                                    <tr><th class="tab_l">Ese. de Vainilla</th><th class="tab_l">1 cucharadita</th></tr>
-                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">50g</th></tr>
-                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharada</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/pastafrola.jpeg" alt="pastafrola" >
-                            <div class="info_receta">
-                            <h2>Pasta Frola</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">1 taza</th></tr>
-                                    <tr><th class="tab_l">Premezcla</th><th class="tab_l">2 tazas</th></tr>
-                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharada</th></tr>
-                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">3/4 taza</th></tr>
-                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
-                                    <tr><th class="tab_l">Yema</th><th class="tab_l">1</th></tr>
-                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">150g</th></tr>
-                                    <tr><th class="tab_l">Dulce de membrillo</th><th class="tab_l">350g</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="card_receta col-lg-4 col-md-6 justify-content-center">
-                        <div class="mostrar">
-                            <img class="img_receta" src="../assest/img/muffins.jpg" alt="muffins" >
-                            <div class="info_receta">
-                            <h2>Muffins</h2>
-                            </div>
-                        </div>
-                        <div class="receta">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="tab_h">Ingrediente</th><th class="tab_h">Cantidad</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><th class="tab_l">Azucar</th><th class="tab_l">200g</th></tr>
-                                    <tr><th class="tab_l">Manteca</th><th class="tab_l">50g</th></tr>
-                                    <tr><th class="tab_l">Huevos</th><th class="tab_l">2</th></tr>
-                                    <tr><th class="tab_l">Almidon de maiz</th><th class="tab_l">200g</th></tr>
-                                    <tr><th class="tab_l">Goma xantica</th><th class="tab_l">1 cucharadita</th></tr>
-                                    <tr><th class="tab_l">Polvo de hornear</th><th class="tab_l">1 cucharadita</th></tr>
-                                    <tr><th class="tab_l">Leche</th><th class="tab_l">100cc</th></tr>
-                                    <tr><th class="tab_l">Esencia de Vainilla</th><th class="tab_l">1 cucharadita</th></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-        <div class="container-fluid">
-            <footer class="d-flex container-fluid cont_footer justify-content-center flex-wrap mb-0">
-                <div class="d-flex flex-lg-row flex-column align-items-center ">
-                    <a class="linkRed" href="https://www.facebook.com/"><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt=""></a>
-                    <a class="linkRed" href="https://www.instagram.com/"><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt=""></a>
-                    <a class="linkRed" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
-                    <a class="linkRed" href="https://wa.me/?text=urlencodedtext"><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt=""></a>
-                    <a class="linkRed" href=""><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt=""></a>
-                </div>
-                <p class="copyright col-12 justify-content-center">© 2023 TierraSinTACC, todos los derechos reservados.</p>
-            </footer>
-        </div>
+        <footer class="cont_footer mb-0 row">
+            <div class="Redes flex-lg-row flex-column r">
+                <a class="linkRed" href="https://www.facebook.com/" target="_blank"><img src="../assest/ico/facebook_icon_125287.png" width="30px" alt="facebook"></a>
+                <a class="linkRed" href="https://www.instagram.com/" target="_blank"><img src="../assest/ico/instagram_f_icon-icons.com_65485.png" width="30px" alt="instagram"></a>
+                <a class="linkRed" href="../index.html"><img src="../assest/img/Logo.png" alt="Logo" width="50px"></a>
+                <a class="linkRed" href="https://wa.me/?text=urlencodedtext" target="_blank"><img src="../assest/ico/whatsapp_icon-icons.com_65489.png" width="30px" alt="whatsapp"></a>
+                <a class="linkRed" href="https://twitter.com/" target="_blank"><img src="../assest/ico/twitterlogooutline_80724.png" width="30px" alt="twitter"></a>
+            </div>
+            <p class="copyright col-12 justify-content-center">© 2023 TierraSinTACC, todos los derechos reservados.</p>
+        </footer>
+    
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

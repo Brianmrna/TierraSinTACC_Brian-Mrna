@@ -1,0 +1,51 @@
+/*Estilado de main lugares.html*/
+.nav_lugares{
+    display: flex;
+    height: 100%;
+    border-radius: 20px;
+    background-color: blueviolet;
+    background-size: cover;
+    font-size: 1.1em;
+    color: blanchedalmond;
+    text-decoration: double;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    border: map-get($bordes, border-double-dospx);
+    }
+
+.card_titulos_lugares{
+    color: white;
+    background-color: rgba(255, 228, 196, 0.719);
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.color_card{ 
+    background-color:$color_fondo;
+    .color_card_int{
+        padding:10px;
+        background-color:$color_fondo_card; 
+        box-shadow: 0 0 20px rgba(247, 247, 247, 0.445);
+        border-radius: 5px;
+        height: 100%;
+        .card_map_lugares{
+            @include centrar;
+            object-fit:cover;
+            height: auto;
+            max-height: 230px;
+            border: map-get($bordes, border-solid-dospx);
+        }
+    }
+}  
+@media (min-width: 768px) {  
+    .nav_lugares{
+        font-size: 2em;
+    }
+    .card_titulos_lugares{
+        font-size: 2.5em;
+    }
+}        

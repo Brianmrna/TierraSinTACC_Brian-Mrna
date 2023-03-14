@@ -1,0 +1,7 @@
+/*A este mixin se utiliza en el footer y las card de lugares.html*/
+@mixin centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

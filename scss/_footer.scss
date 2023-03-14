@@ -1,0 +1,38 @@
+.cont_footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(33, 37, 41);
+    border-top-style: double;
+    border-top-color: rgb(70, 68, 68);
+    text-align: center;
+    .Redes{
+        @include centrar;
+        .linkRed{
+            padding: 5px;
+            margin: 10px;
+            background-color: rgba(240, 248, 255, 0.404);
+            border-radius: 20px;
+        }
+    }
+    
+    .copyright{
+        color: aliceblue;
+        font-weight: 600;
+        font-size: small;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .cont_footer{
+        .Redes{
+            .linkRed{
+                margin: 30px;
+             }   
+        }
+        
+        .copyright{
+            font-size:medium;
+        }    
+    }
+}

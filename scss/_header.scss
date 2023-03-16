@@ -5,7 +5,7 @@
     z-index: 10;
     .itemNav{  
         list-style: none;
-        background-color:$color_fondo_card;
+        background-color:black;
         border-radius: 10px;
         border: map-get($bordes , border-solid-black );
         text-align: center;
@@ -50,6 +50,7 @@
     text-align: center;
     flex-direction: column;
     .titulo_principal{
+        color: black;
         font-size: 2.5em;
         font-style: italic;
         font-weight: 600;

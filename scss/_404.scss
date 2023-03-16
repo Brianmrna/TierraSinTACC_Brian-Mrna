@@ -1,0 +1,32 @@
+.cont_404{
+    text-align: center;
+    align-content: center;
+    color: aqua;
+    .color_font{
+        color: aliceblue;
+    }
+    .e404{
+        font-size: 100px;
+        object-fit: cover;
+    }
+    .volver_inicio{
+        display: flex;
+        height: 100%;
+        border-radius: 20px;
+        background-color: rgb(93, 92, 94);
+        background-size: cover;
+        font-size: 1.1em;
+        color: blanchedalmond;
+        text-decoration: double;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        word-wrap: break-word !important;
+        word-break: break-word !important;
+        border: map-get($bordes, border-double-dospx);
+        &:hover{
+            background-color:rgb(172, 171, 173);
+            color: black;
+        }
+        }
+}

@@ -46,7 +46,7 @@
   z-index: 10; }
   .cabecera .itemNav {
     list-style: none;
-    background-color: black;
+    background-color: 39, 40, 45;
     border-radius: 10px;
     border: 1px solid white;
     text-align: center; }
@@ -132,13 +132,13 @@
 
 .cont_card_index {
   display: flex;
-  background-color: black;
+  background-color: 39, 40, 45;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 30px; }
   .cont_card_index .card_index {
     display: inline-block;
-    background-color: black;
+    background-color: 39, 40, 45;
     margin: 50px;
     padding: 10px;
     border-radius: 5px;
@@ -188,7 +188,7 @@
   background-color: #212529; }
   .color_card .color_card_int {
     padding: 10px;
-    background-color: black;
+    background-color: 39, 40, 45;
     box-shadow: 0 0 20px rgba(247, 247, 247, 0.445);
     border-radius: 5px;
     height: 100%; }

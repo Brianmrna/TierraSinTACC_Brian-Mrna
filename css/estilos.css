@@ -46,7 +46,7 @@
   z-index: 10; }
   .cabecera .itemNav {
     list-style: none;
-    background-color: 39, 40, 45;
+    background-color: 0, 0, 0;
     border-radius: 10px;
     border: 1px solid white;
     text-align: center; }
